@@ -15,12 +15,18 @@ class Weather {
     var huminity: Int
     var description: String
     var icon: UIImage
+    var maxTemp: Double
+    var minTemp: Double
+    var pressure: Int
     
-    init(temp: Double, huminity: Int, description: String, icon: UIImage) {
+    init(temp: Double, huminity: Int, description: String, icon: UIImage, maxTemp: Double, minTemp: Double, pressure: Int) {
         self.temp = temp
         self.huminity = huminity
         self.description = description
         self.icon = icon
+        self.maxTemp = maxTemp
+        self.minTemp = minTemp
+        self.pressure = pressure
     }
     
 }

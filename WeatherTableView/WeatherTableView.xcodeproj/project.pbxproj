@@ -16,6 +16,7 @@
 		D300499F239F0652006127BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D300499D239F0652006127BF /* LaunchScreen.storyboard */; };
 		D30049A9239F5BE6006127BF /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30049A8239F5BE6006127BF /* WeatherCell.swift */; };
 		D30049AB239F5E22006127BF /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30049AA239F5E22006127BF /* Weather.swift */; };
+		D384B06D23A1A81C00994818 /* DetailWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D384B06C23A1A81C00994818 /* DetailWeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D30049A0239F0652006127BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D30049A8239F5BE6006127BF /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		D30049AA239F5E22006127BF /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		D384B06C23A1A81C00994818 /* DetailWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWeatherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				D30049A0239F0652006127BF /* Info.plist */,
 				D30049A8239F5BE6006127BF /* WeatherCell.swift */,
 				D30049AA239F5E22006127BF /* Weather.swift */,
+				D384B06C23A1A81C00994818 /* DetailWeatherViewController.swift */,
 			);
 			path = WeatherTableView;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				D30049A9239F5BE6006127BF /* WeatherCell.swift in Sources */,
 				D3004997239F0651006127BF /* ViewController.swift in Sources */,
 				D3004993239F0651006127BF /* AppDelegate.swift in Sources */,
+				D384B06D23A1A81C00994818 /* DetailWeatherViewController.swift in Sources */,
 				D3004995239F0651006127BF /* SceneDelegate.swift in Sources */,
 				D30049AB239F5E22006127BF /* Weather.swift in Sources */,
 			);

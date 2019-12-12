@@ -16,8 +16,8 @@ class WeatherCell: UITableViewCell {
    
     
     func setWeather(weather: Weather) {
-        tempLabel.text = String(weather.temp)
-        huminityLabel.text = String(weather.huminity)
+        tempLabel.text = "Daily:\(String(weather.temp))°"
+        huminityLabel.text = "Humidity:\(String(weather.huminity))"
         descriptionLabel.text = weather.description
         iconImage.image = weather.icon
     }
