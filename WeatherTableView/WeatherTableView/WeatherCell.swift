@@ -13,8 +13,7 @@ class WeatherCell: UITableViewCell {
     @IBOutlet weak var huminityLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var iconImage: UIImageView!
-   
-    
+
     func setWeather(weather: Weather) {
         tempLabel.text = "Daily:\(String(weather.temp))°"
         huminityLabel.text = "Humidity:\(String(weather.huminity))"

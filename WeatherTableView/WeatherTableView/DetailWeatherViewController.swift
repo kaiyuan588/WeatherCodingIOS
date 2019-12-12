@@ -35,11 +35,8 @@ class DetailWeatherViewController: UIViewController {
     var minTemp = ""
     var pressure = ""
     static var fet = true
-//    let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        
         tempLabel.text = "Daily: \(temp)°"
         weatherImage.image = image
         humidityLabel.text = "Humidity: \(hum)"

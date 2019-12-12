@@ -23,7 +23,10 @@ class ViewController: UITableViewController{
         // Do any additional setup after loading the view.
         myTableView.delegate = self
         myTableView.dataSource = self
-    Alamofire.request("http://api.openweathermap.org/data/2.5/forecast?q=Philadelphia,us&mode=json&appid=a3dda1c09a26b1c0edf12dc3e88f6991&amp;units=metric&amp;cnt=4").responseJSON { (response) in
+        fetchTableData()
+    }
+    func fetchTableData(){
+        Alamofire.request("http://api.openweathermap.org/data/2.5/forecast?q=Philadelphia,us&mode=json&appid=a3dda1c09a26b1c0edf12dc3e88f6991&amp;units=metric&amp;cnt=4").responseJSON { (response) in
             if let responseStr = response.result.value {
                 let jsonResponse = JSON(responseStr)
                 for eachList in 0 ..< jsonResponse["list"].count {
@@ -61,7 +64,6 @@ class ViewController: UITableViewController{
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(identifier: "DetailViewController") as! DetailWeatherViewController
-        
         vc.temp = String(DetailWeatherViewController.weatherArray[indexPath.row].temp)
         vc.image = DetailWeatherViewController.weatherArray[indexPath.row].icon
         vc.hum = String(DetailWeatherViewController.weatherArray[indexPath.row].huminity)
@@ -69,10 +71,7 @@ class ViewController: UITableViewController{
         vc.maxTemp = String(DetailWeatherViewController.weatherArray[indexPath.row].maxTemp)
         vc.minTemp = String(DetailWeatherViewController.weatherArray[indexPath.row].minTemp)
         vc.pressure = String(DetailWeatherViewController.weatherArray[indexPath.row].pressure)
-
         splitViewController?.showDetailViewController(vc, sender: nil)
-        
-        
     }
 }
 
